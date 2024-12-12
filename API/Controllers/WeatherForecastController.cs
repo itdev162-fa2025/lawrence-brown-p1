@@ -63,8 +63,6 @@ public class WeatherForecastController : ControllerBase
         if (tempf > 100 && tempf <= 110) { summ = "Sweltering"; ; }
         if (tempf > 110 && tempf <= 140) { summ = "Scorching"; ; }
 
-        //"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-
         var forecast = new WeatherForecast()
         {
             Date = DateOnly.FromDateTime(DateTime.Now),
